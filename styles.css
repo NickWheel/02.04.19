@@ -1,0 +1,60 @@
+nav { 
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.coloured_block {
+    height: 50px;
+    width: 33%;
+    background-color: cyan;
+}
+h1 {
+    margin: 0 10px;
+}
+.container {
+    margin: 100px auto;
+    width: 400px;
+}
+p {
+    position: relative;
+    text-align: center;
+}
+p::before {
+    position: absolute;
+    content: url(img/314755-32.png);
+    top: -40px;
+    left: 200px;
+}
+p::after {
+    position: absolute;
+    content: url(img/314755-32.png);
+    bottom: -50px;
+    left: 200px;
+}
+a {
+    text-decoration: none;
+    font-style: italic;
+    color: salmon;
+}
+a::before { 
+    content: url(img/183254-16.png);
+}
+span::before{
+    content: open-quote;
+}
+span::after {
+    content: close-quote;
+}
+h2 {
+    color: brown;
+    opacity: 0.5;
+    font-style: italic;
+}
+h2::before {
+    content: open-quote;
+}
+h2::after {
+    content: close-quote;
+}
